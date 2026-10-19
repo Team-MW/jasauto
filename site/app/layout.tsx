@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Barlow_Condensed, Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 
 const barlow = Barlow_Condensed({
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="page">{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
