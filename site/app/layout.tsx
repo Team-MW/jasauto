@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Bitter, Poppins } from "next/font/google";
+import { Barlow_Condensed, Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const bitter = Bitter({
+const barlow = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["400", "700", "800"],
+  weight: ["500", "600", "700", "800"],
   style: ["normal", "italic"],
-  variable: "--font-bitter",
+  variable: "--font-title",
 });
 
 const poppins = Poppins({
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${bitter.variable} ${poppins.variable}`}>
+    <html lang="fr" className={`${barlow.variable} ${poppins.variable}`}>
       <body>
         <Header />
         <main className="page">{children}</main>

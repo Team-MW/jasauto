@@ -9,7 +9,7 @@
   --yellow-2: #ffdd55;
   --radius: 16px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --title: var(--font-bitter), Georgia, serif;
+  --title: var(--font-title), "Arial Narrow", sans-serif;
   --body: var(--font-poppins), system-ui, sans-serif;
 }
 
@@ -68,12 +68,12 @@ img { max-width: 100%; height: auto; }
   font-family: var(--title);
   font-style: italic;
   font-weight: 800;
-  font-size: 34px;
-  letter-spacing: 0.14em;
+  font-size: 42px;
+  letter-spacing: 0.12em;
   color: #fff;
   transition: font-size 0.35s var(--ease), letter-spacing 0.35s;
 }
-.header.scrolled .header-title { font-size: 26px; }
+.header.scrolled .header-title { font-size: 32px; }
 .header-title:hover { letter-spacing: 0.2em; }
 
 .nav {
@@ -95,10 +95,10 @@ img { max-width: 100%; height: auto; }
   height: 100%;
   color: #fff;
   font-family: var(--title);
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.16em;
   transition: color 0.25s;
 }
 .nav-link::after {
