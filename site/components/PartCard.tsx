@@ -3,14 +3,14 @@ import Link from "next/link";
 import { ArrowIcon } from "./Icons";
 import { formatPrice } from "@/lib/data";
 
-type Props = { title: string; brand: string; price: number };
+type Props = { title: string; brand: string; price: number; image: string };
 
-export default function PartCard({ title, brand, price }: Props) {
+export default function PartCard({ title, brand, price, image }: Props) {
   return (
     <article className="part">
       <div className="part-img">
         <span className="part-badge">Garantie</span>
-        <Image src="/logo.png" alt="" width={140} height={81} />
+        <Image src={image} alt={title} fill sizes="(max-width: 640px) 100vw, 300px" />
       </div>
       <div className="part-body">
         <span className="part-brand">{brand}</span>
